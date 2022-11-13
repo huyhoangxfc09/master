@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p> select a new car from the list</p>
+<select id="my select" onchange="do_something()">
+  <option value="audi">audi</option>
+  <option value="bmw">bmw</option>
+  <option value="md">mercerdes</option>
+  <option value="volo">volo</option>
+</select>
+</body>
+<script>
+  function do_something(){
+    var selectedvalue =document.getElementById("my select").value;
+    alert(selectedvalue);
+  }
+</script>
+</html>
