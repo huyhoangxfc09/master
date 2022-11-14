@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+  body{padding-top: 30px}
+  body{padding-left: 20px}
+</style>
+<body>
+<p><b><i><span style="color:red ">Five Wing 96:</span></i></b></p>
+<input type="text" id="txtValue"/>
+<input type="button" id="btnAdd" value="Add" onclick="add_element_to_array();"/>
+<input type="button" id="btnDisplay" value="Display" onclick="display_array();"/>
+<div id="result"></div>
+<hr width="20%"
+    color="red"
+    align="left"
+    size="5px">
+<script>
+    let x = 0;
+    let array = Array();
+    function add_element_to_array() {
+    array[x] = document.getElementById("txtValue").value;
+    alert("Element: " + array[x] + " Added at index " + x);
+    x++;
+    document.getElementById("txtValue ").value = "";
+    }
+</script>
+</body>
+</html>
